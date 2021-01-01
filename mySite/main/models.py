@@ -4,7 +4,7 @@ from django.db import models
 class ToDoList(models.Model):
     name = models.CharField(max_length = 200)
     
-    def _str_(self):
+    def _str_ (self):
         return self.name
     
     
@@ -13,5 +13,5 @@ class Item(models.Model):
     text = models.CharField(max_length = 300)
     complete = models.BooleanField()
     
-    def _str_(self):
+    def _str_ (self):
         return self.text
